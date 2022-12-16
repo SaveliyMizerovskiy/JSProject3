@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="myscripts.js"></script>
+    <link rel="stylesheet" href="mystyles.css">
+    
+</head>
+<body onload="init();">
+    <form>
+        <label for="rolls">Number of Die (1, 2 or 3):</label><br>
+        <input type="text" id="numDie" placeholder="1, 2 or 3"><br>
+        <label for="times">Number of Times Rolled:</label><br>
+        <input type="text" id="numRolls" placeholder="whole number > 1"><br>
+        <input type="reset" value="Reset">
+     </form><br>
+     <button onclick="submit();">Submit</button><br><br>
+     <button onclick="window.location.reload();">Clear Table</button><br>
+     <br><br>
+     <button onclick="rollDice();">Roll Dice</button>
+     <table id="dicetable">
+        <tr>
+            <th>Frequency</th>
+            <th>Mean</th>
+            <th>Median</th>
+            <th>Mode</th>
+            <th>Doubles</th>
+            <th>Triples</th>
+        </tr>
+    </table>
+</body>
+</html>
